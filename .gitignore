@@ -23,7 +23,6 @@ nbactions.xml
 **/pom.xml.versionsBackup
 /apl-core/nbproject/
 /apl-utils/nbproject/
-/.mvn/
 /apl-blockchain-db/
 /apl-blockchain-logs/
 /apl-blockchain-secure-storage/
