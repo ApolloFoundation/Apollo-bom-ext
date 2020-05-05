@@ -302,6 +302,19 @@
         <artifactId>resteasy-multipart-provider</artifactId>
         <version>${resteasy.version}</version>
       </dependency>
+<!--
+      <dependency>
+        <groupId>org.jboss.resteasy</groupId>
+        <artifactId>resteasy-jaxrs</artifactId>
+        <version>3.11.2.Final</version>
+      </dependency>
+-->
+      <dependency> <!-- Needed for FAT JAR -->
+        <groupId>org.jboss.resteasy</groupId>
+        <artifactId>resteasy-tracing-api</artifactId>
+        <version>1.0.0.Final</version>
+      </dependency>
+
       <!--      Validation-->
       <dependency>
         <groupId>javax.validation</groupId>
@@ -479,6 +492,12 @@
         <groupId>commons-fileupload</groupId>
         <artifactId>commons-fileupload</artifactId>
         <version>${commons-fileupload.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpcore-nio</artifactId>
+        <version>4.4.13</version>
       </dependency>
 
       <!--TEST frameworks-->
