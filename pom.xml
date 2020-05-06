@@ -65,6 +65,7 @@
     <apache-commons-codec.version>1.9</apache-commons-codec.version>
     <apache-commons-net.version>3.6</apache-commons-net.version>
     <apache-commons-math3.version>3.6.1</apache-commons-math3.version>
+    <apache-httpcomponents.version>4.4.13</apache-httpcomponents.version>
 
     <openjfx.version>12-ea+3</openjfx.version>
     <tika.version>1.22</tika.version>
@@ -95,6 +96,7 @@
     <weld-junit5.version>2.0.1.Final</weld-junit5.version>
     <rs-api.version>2.1.1</rs-api.version>
     <resteasy.version>4.5.3.Final</resteasy.version>
+    <resteasy-tracing.version>1.0.0.Final</resteasy-tracing.version>
     <swagger.version>2.1.1</swagger.version>
     <junit5-bom.version>5.6.0</junit5-bom.version>
     <mockito.version>3.0.0</mockito.version>
@@ -113,6 +115,10 @@
     <commons-fileupload.version>1.4</commons-fileupload.version>
     <org.web3j.core.version>4.5.6</org.web3j.core.version>
     <ethereumj-core.version>1.7.2-RELEASE</ethereumj-core.version>
+    <jboss-logging-main.version>3.2.1.Final</jboss-logging-main.version>
+    <jboss-logging-optional.version>2.1.0.Final</jboss-logging-optional.version>
+    <jta.version>1.1</jta.version>
+    <two-factor.version>1.0</two-factor.version>
   </properties>
 
   <dependencyManagement>
@@ -312,12 +318,12 @@
       <dependency> <!-- Needed by FAT JAR in run-time -->
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-tracing-api</artifactId>
-        <version>1.0.0.Final</version>
+        <version>${resteasy-tracing.version}</version>
       </dependency>
       <dependency> <!-- Needed by FAT JAR in run-time -->
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpcore-nio</artifactId>
-        <version>4.4.13</version>
+        <version>${apache-httpcomponents.version}</version>
       </dependency>
 
 
@@ -351,29 +357,29 @@
       <dependency>
         <groupId>org.jboss.logging</groupId>
         <artifactId>jboss-logging</artifactId>
-        <version>3.2.1.Final</version>
+        <version>${jboss-logging-main.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jboss.logging</groupId>
         <artifactId>jboss-logging-annotations</artifactId>
-        <version>2.1.0.Final</version>
+        <version>${jboss-logging-optional.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jboss.logging</groupId>
         <artifactId>jboss-logging-processor</artifactId>
-        <version>2.1.0.Final</version>
+        <version>${jboss-logging-optional.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.transaction</groupId>
         <artifactId>jta</artifactId>
-        <version>1.1</version>
+        <version>${jta.version}</version>
       </dependency>
 
       <!--2fa api-->
       <dependency>
         <groupId>com.j256.two-factor-auth</groupId>
         <artifactId>two-factor-auth</artifactId>
-        <version>1.0</version>
+        <version>${two-factor.version}</version>
       </dependency>
 
       <!-- Swagger runtime dependencies -->
