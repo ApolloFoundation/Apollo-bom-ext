@@ -5,7 +5,7 @@
 
   <groupId>com.apollocurrency</groupId>
   <artifactId>apl-bom-ext</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <packaging>pom</packaging>
   <name>apl-bom-ext</name>
 
@@ -48,7 +48,7 @@
     <!--Web-->
     <servlet-api.version>3.1.0</servlet-api.version>
     <!--  -->
-    <antifraud.version>1.0.7</antifraud.version>
+    <antifraud.version>1.0.8</antifraud.version>
 
     <!--Crypto-->
 
