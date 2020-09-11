@@ -83,6 +83,8 @@
 
     <!--Db-->
     <h2.version>1.4.199</h2.version>
+    <testcontainers.version>1.14.3</testcontainers.version>
+    <mariadb-java-client.version>2.6.1</mariadb-java-client.version>
 
     <!--Logging-->
     <slf4j.version>1.7.30</slf4j.version>
@@ -405,6 +407,12 @@
         <artifactId>h2</artifactId>
         <version>${h2.version}</version>
       </dependency>
+      <!-- https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
+      <dependency>
+        <groupId>org.mariadb.jdbc</groupId>
+        <artifactId>mariadb-java-client</artifactId>
+        <version>${mariadb-java-client.version}</version>
+      </dependency>
 
       <!-- Apache Tika libs-->
       <dependency>
@@ -524,7 +532,19 @@
       </dependency>
       <dependency>
         <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>${junit5-bom.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-params</artifactId>
+        <version>${junit5-bom.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
         <version>${junit5-bom.version}</version>
         <scope>test</scope>
       </dependency>
@@ -544,6 +564,18 @@
         <groupId>org.mockito</groupId>
         <artifactId>mockito-junit-jupiter</artifactId>
         <version>${mockito.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.testcontainers</groupId>
+        <artifactId>mariadb</artifactId>
+        <version>${testcontainers.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.testcontainers</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <version>${testcontainers.version}</version>
         <scope>test</scope>
       </dependency>
       <!-- RESTEasy Validator Provider -->
