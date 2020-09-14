@@ -5,7 +5,7 @@
 
   <groupId>com.apollocurrency</groupId>
   <artifactId>apl-bom-ext</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <packaging>pom</packaging>
   <name>apl-bom-ext</name>
 
@@ -59,8 +59,10 @@
     <servlet-api.version>3.1.0</servlet-api.version>
 
     <!--Crypto-->
-    <fbcrypto.version>1.2.11</fbcrypto.version>
-    <bcprov.version>1.64</bcprov.version>
+
+    <fbcrypto.version>2.0.0</fbcrypto.version>
+    <bcprov.version>1.65</bcprov.version>
+
 
 
     <!--QR-code-->
@@ -312,13 +314,13 @@
         <artifactId>resteasy-multipart-provider</artifactId>
         <version>${resteasy.version}</version>
       </dependency>
-<!--
-      <dependency>
-        <groupId>org.jboss.resteasy</groupId>
-        <artifactId>resteasy-jaxrs</artifactId>
-        <version>3.11.2.Final</version>
-      </dependency>
--->
+      <!--
+            <dependency>
+              <groupId>org.jboss.resteasy</groupId>
+              <artifactId>resteasy-jaxrs</artifactId>
+              <version>3.11.2.Final</version>
+            </dependency>
+      -->
       <dependency> <!-- Needed by FAT JAR in run-time -->
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-tracing-api</artifactId>
