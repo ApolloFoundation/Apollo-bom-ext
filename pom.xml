@@ -5,7 +5,7 @@
 
   <groupId>com.apollocurrency</groupId>
   <artifactId>apl-bom-ext</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
   <packaging>pom</packaging>
   <name>apl-bom-ext</name>
 
@@ -149,6 +149,37 @@
           </exclusion>
         </exclusions>
       </dependency>
+      <dependency>
+        <groupId>io.firstbridge</groupId>
+        <artifactId>fb-comm</artifactId>
+        <version>1.0.0</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.junit</groupId>
+            <artifactId>junit-bom</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>io.firstbridge</groupId>
+        <artifactId>fb-identity</artifactId>
+        <version>1.0.0</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.junit</groupId>
+            <artifactId>junit-bom</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcprov-jdk15on</artifactId>
