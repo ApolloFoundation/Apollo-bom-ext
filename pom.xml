@@ -103,18 +103,18 @@
     <!-- TODO: cleanup -->
     <jetty.version>9.4.24.v20191120</jetty.version>
     <bitlet.version>0.1.4</bitlet.version>
-    <weld.version>3.1.4.Final</weld.version>
+    <weld.version>3.1.5.Final</weld.version>
     <weld-junit5.version>2.0.1.Final</weld-junit5.version>
     <rs-api.version>2.1.1</rs-api.version>
     <resteasy.version>4.5.3.Final</resteasy.version>
     <resteasy-tracing.version>1.0.0.Final</resteasy-tracing.version>
     <swagger.version>2.1.2</swagger.version>
-    <junit5-bom.version>5.6.2</junit5-bom.version>
-    <mockito.version>3.3.3</mockito.version>
+    <junit5-bom.version>5.7.0</junit5-bom.version>
+    <mockito.version>3.5.11</mockito.version>
     <hikari.version>3.4.1</hikari.version>
     <jcommander.version>1.72</jcommander.version>
-    <jdbi3-core.version>3.11.1</jdbi3-core.version>
-    <jdbi3-sqlobject.version>3.11.1</jdbi3-sqlobject.version>
+    <jdbi3-core.version>3.14.4</jdbi3-core.version>
+    <jdbi3-sqlobject.version>3.14.4</jdbi3-sqlobject.version>
     <lombok.version>1.18.12</lombok.version>
     <guava.version>28.1-jre</guava.version>
     <janino.version>3.1.0</janino.version>
