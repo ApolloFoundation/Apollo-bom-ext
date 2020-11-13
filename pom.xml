@@ -96,6 +96,11 @@
     <log4jdbc.version>1.2</log4jdbc.version>
     <p6spy.version>3.8.6</p6spy.version>
 
+    <quarkus.platform.version>1.9.2.Final</quarkus.platform.version>
+    <quarkus.platform.artifact-id>quarkus-universe-bom</quarkus.platform.artifact-id>
+    <quarkus-plugin.version>1.9.2.Final</quarkus-plugin.version>
+    <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
+
     <!--Tests-->
     <json-simple.version>1.1.1</json-simple.version>
     <jsonassert.version>1.5.0</jsonassert.version>
@@ -524,6 +529,14 @@
         <groupId>commons-fileupload</groupId>
         <artifactId>commons-fileupload</artifactId>
         <version>${commons-fileupload.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${quarkus.platform.group-id}</groupId>
+        <artifactId>${quarkus.platform.artifact-id}</artifactId>
+        <version>${quarkus.platform.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
 
       <!--TEST frameworks-->
