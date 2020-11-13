@@ -531,12 +531,61 @@
         <version>${commons-fileupload.version}</version>
       </dependency>
 
+      <!-- Quarkus BOM + libs -->
       <dependency>
         <groupId>${quarkus.platform.group-id}</groupId>
         <artifactId>${quarkus.platform.artifact-id}</artifactId>
         <version>${quarkus.platform.version}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-hibernate-validator</artifactId>
+        <version>${quarkus.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-resteasy-jsonb</artifactId>
+        <version>${quarkus.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-undertow</artifactId>
+        <version>${quarkus.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-tika</artifactId>
+        <version>${quarkus.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-resteasy</artifactId>
+        <version>${quarkus.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-resteasy-jackson</artifactId>
+        <version>${quarkus.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-arc</artifactId>
+        <version>${quarkus.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-junit5</artifactId>
+        <version>${quarkus.platform.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>rest-assured</artifactId>
+        <version>${quarkus.platform.version}</version>
+        <scope>test</scope>
       </dependency>
 
       <!--TEST frameworks-->
