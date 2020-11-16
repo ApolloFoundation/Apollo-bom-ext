@@ -137,6 +137,7 @@
     <jboss-logging-optional.version>2.1.0.Final</jboss-logging-optional.version>
     <jta.version>1.1</jta.version>
     <two-factor.version>1.0</two-factor.version>
+    <rest-assured.version>4.3.0</rest-assured.version>
   </properties>
 
   <dependencyManagement>
@@ -340,7 +341,7 @@
       </dependency>
 
 
-      <!--      Validation-->
+      <!-- Validation -->
       <dependency>
         <groupId>javax.validation</groupId>
         <artifactId>validation-api</artifactId>
@@ -584,7 +585,7 @@
       <dependency>
         <groupId>io.rest-assured</groupId>
         <artifactId>rest-assured</artifactId>
-        <version>${quarkus.platform.version}</version>
+        <version>${rest-assured.version}</version>
         <scope>test</scope>
       </dependency>
 
