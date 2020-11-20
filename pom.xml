@@ -207,6 +207,7 @@
         </exclusions>
       </dependency>
       <!-- json-simple should be gone after new REST completion -->
+<!--
       <dependency>
         <groupId>com.fasterxml.jackson.datatype</groupId>
         <artifactId>jackson-datatype-json-org</artifactId>
@@ -227,6 +228,7 @@
         <artifactId>jackson-databind</artifactId>
         <version>${jackson.version}</version>
       </dependency>
+-->
 
       <!--Lucene libs-->
       <dependency>
@@ -250,6 +252,7 @@
         <version>${lucene.version}</version>
       </dependency>
 
+<!--
       <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>javax.servlet-api</artifactId>
@@ -291,6 +294,7 @@
         <artifactId>jetty-servlets</artifactId>
         <version>${jetty.version}</version>
       </dependency>
+-->
 
       <!-- REST:  Need to put api here because strange things happens without it  -->
       <dependency>
@@ -299,6 +303,7 @@
         <version>${rs-api.version}</version>
       </dependency>
       <!-- RESTEasy runtime dependencies -->
+<!--
       <dependency>
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-servlet-initializer</artifactId>
@@ -325,41 +330,40 @@
         <artifactId>resteasy-multipart-provider</artifactId>
         <version>${resteasy.version}</version>
       </dependency>
-      <!--
-            <dependency>
-              <groupId>org.jboss.resteasy</groupId>
-              <artifactId>resteasy-jaxrs</artifactId>
-              <version>3.11.2.Final</version>
-            </dependency>
-      -->
-      <dependency> <!-- Needed by FAT JAR in run-time -->
+      <dependency>
+        <groupId>org.jboss.resteasy</groupId>
+        <artifactId>resteasy-jaxrs</artifactId>
+        <version>3.11.2.Final</version>
+      </dependency>
+      <dependency> &lt;!&ndash; Needed by FAT JAR in run-time &ndash;&gt;
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-tracing-api</artifactId>
         <version>${resteasy-tracing.version}</version>
       </dependency>
-      <dependency> <!-- Needed by FAT JAR in run-time -->
+      <dependency> &lt;!&ndash; Needed by FAT JAR in run-time &ndash;&gt;
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpcore-nio</artifactId>
         <version>${apache-httpcomponents.version}</version>
       </dependency>
+-->
 
 
       <!-- Validation -->
+<!--
       <dependency>
         <groupId>javax.validation</groupId>
         <artifactId>validation-api</artifactId>
         <version>${bean-validation-api.version}</version>
       </dependency>
+-->
+<!--
       <dependency>
         <groupId>org.hibernate.validator</groupId>
         <artifactId>hibernate-validator-cdi</artifactId>
         <version>${hibernate-validator.version}</version>
       </dependency>
-      <dependency>
-        <groupId>com.thoughtworks.paranamer</groupId>
-        <artifactId>paranamer</artifactId>
-        <version>${paranamer.version}</version>
-      </dependency>
+-->
+<!--
       <dependency>
         <groupId>javax.el</groupId>
         <artifactId>javax.el-api</artifactId>
@@ -370,27 +374,34 @@
         <artifactId>javax.el</artifactId>
         <version>${el-glassfish-impl.version}</version>
       </dependency>
+-->
+      <dependency>
+        <groupId>com.thoughtworks.paranamer</groupId>
+        <artifactId>paranamer</artifactId>
+        <version>${paranamer.version}</version>
+      </dependency>
 
-      <dependency>
-        <groupId>org.jboss.logging</groupId>
-        <artifactId>jboss-logging</artifactId>
-        <version>${jboss-logging-main.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.logging</groupId>
-        <artifactId>jboss-logging-annotations</artifactId>
-        <version>${jboss-logging-optional.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.logging</groupId>
-        <artifactId>jboss-logging-processor</artifactId>
-        <version>${jboss-logging-optional.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.transaction</groupId>
-        <artifactId>jta</artifactId>
-        <version>${jta.version}</version>
-      </dependency>
+
+  <!--      <dependency>
+              <groupId>org.jboss.logging</groupId>
+              <artifactId>jboss-logging</artifactId>
+              <version>${jboss-logging-main.version}</version>
+            </dependency>
+            <dependency>
+              <groupId>org.jboss.logging</groupId>
+              <artifactId>jboss-logging-annotations</artifactId>
+              <version>${jboss-logging-optional.version}</version>
+            </dependency>
+            <dependency>
+              <groupId>org.jboss.logging</groupId>
+              <artifactId>jboss-logging-processor</artifactId>
+              <version>${jboss-logging-optional.version}</version>
+            </dependency>
+            <dependency>
+              <groupId>javax.transaction</groupId>
+              <artifactId>jta</artifactId>
+              <version>${jta.version}</version>
+            </dependency>-->
 
       <!--2fa api-->
       <dependency>
@@ -415,17 +426,18 @@
         <artifactId>swagger-models</artifactId>
         <version>${swagger.version}</version>
       </dependency>
+<!--
       <dependency>
         <groupId>com.h2database</groupId>
         <artifactId>h2</artifactId>
         <version>${h2.version}</version>
       </dependency>
-      <!-- https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
       <dependency>
         <groupId>org.mariadb.jdbc</groupId>
         <artifactId>mariadb-java-client</artifactId>
         <version>${mariadb-java-client.version}</version>
       </dependency>
+-->
 
       <dependency>
         <groupId>org.flywaydb</groupId>
@@ -434,11 +446,11 @@
       </dependency>
 
       <!-- Apache Tika libs-->
-      <dependency>
+<!--      <dependency>
         <groupId>org.apache.tika</groupId>
         <artifactId>tika-core</artifactId>
         <version>${tika.version}</version>
-      </dependency>
+      </dependency>-->
       <dependency>
         <groupId>org.bitlet</groupId>
         <artifactId>weupnp</artifactId>
@@ -465,6 +477,7 @@
           </exclusion>
         </exclusions>
       </dependency>
+<!--
       <dependency>
         <groupId>org.jboss.weld.servlet</groupId>
         <artifactId>weld-servlet-shaded</artifactId>
@@ -476,6 +489,7 @@
         <version>${weld-junit5.version}</version>
         <scope>test</scope>
       </dependency>
+-->
 
       <dependency>
         <groupId>commons-io</groupId>
@@ -546,6 +560,16 @@
 
       <dependency>
         <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-flyway</artifactId>
+        <version>${quarkus.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-vertx</artifactId>
+        <version>${quarkus.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-validator</artifactId>
         <version>${quarkus.platform.version}</version>
       </dependency>
@@ -556,8 +580,23 @@
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-smallrye-openapi</artifactId>
+        <version>${quarkus.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-jdbc-mariadb</artifactId>
+        <version>${quarkus.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-jsonb</artifactId>
         <version>${quarkus.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>jakarta.servlet</groupId>
+        <artifactId>jakarta.servlet-api</artifactId>
+        <version>4.0.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -567,6 +606,16 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-tika</artifactId>
+        <version>${quarkus.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkus.http</groupId>
+        <artifactId>quarkus-http-core</artifactId>
+        <version>${quarkus.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkus.http</groupId>
+        <artifactId>quarkus-http-servlet</artifactId>
         <version>${quarkus.platform.version}</version>
       </dependency>
       <dependency>
