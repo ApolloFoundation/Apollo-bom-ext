@@ -98,6 +98,7 @@
 
     <quarkus.platform.version>1.9.2.Final</quarkus.platform.version>
     <quarkus-plugin.version>1.9.2.Final</quarkus-plugin.version>
+    <quarkus-http-servlet.version>3.0.16.Final</quarkus-http-servlet.version>
 
     <!--Tests-->
     <json-simple.version>1.1.1</json-simple.version>
@@ -611,12 +612,12 @@
       <dependency>
         <groupId>io.quarkus.http</groupId>
         <artifactId>quarkus-http-core</artifactId>
-        <version>${quarkus.platform.version}</version>
+        <version>${quarkus-http-servlet.version}</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.http</groupId>
         <artifactId>quarkus-http-servlet</artifactId>
-        <version>${quarkus.platform.version}</version>
+        <version>${quarkus-http-servlet.version}</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
