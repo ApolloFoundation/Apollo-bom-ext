@@ -5,7 +5,7 @@
 
   <groupId>com.apollocurrency</groupId>
   <artifactId>apl-bom-ext</artifactId>
-  <version>1.0.5</version>
+  <version>1.0.4</version>
   <packaging>pom</packaging>
   <name>apl-bom-ext</name>
 
@@ -81,7 +81,7 @@
     <upnp.version>0.1.4</upnp.version>
     <jackson.version>2.10.3</jackson.version>
     <!--Indexing-->
-    <lucene.version>8.6.3</lucene.version>
+    <lucene.version>7.5.0</lucene.version>
 
     <!--Db-->
     <h2.version>1.4.199</h2.version>
