@@ -636,6 +636,11 @@
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-picocli</artifactId>
+        <version>${quarkus.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkus</groupId>
         <artifactId>quarkus-junit5</artifactId>
         <version>${quarkus.platform.version}</version>
         <scope>test</scope>
