@@ -88,7 +88,7 @@
     <testcontainers.version>1.14.3</testcontainers.version>
     <mariadb-java-client.version>2.6.1</mariadb-java-client.version>
 
-    <flyway.version>7.0.4</flyway.version>
+<!--    <flyway.version>7.0.4</flyway.version>-->
 
     <!--Logging-->
     <slf4j.version>1.7.30</slf4j.version>
@@ -438,12 +438,11 @@
       </dependency>
 -->
 
-      <dependency>
+<!--      <dependency>
         <groupId>org.flywaydb</groupId>
         <artifactId>flyway-core</artifactId>
         <version>${flyway.version}</version>
-      </dependency>
-
+      </dependency>-->
       <!-- Apache Tika libs-->
 <!--      <dependency>
         <groupId>org.apache.tika</groupId>
