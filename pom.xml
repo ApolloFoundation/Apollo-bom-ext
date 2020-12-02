@@ -96,8 +96,8 @@
     <log4jdbc.version>1.2</log4jdbc.version>
     <p6spy.version>3.8.6</p6spy.version>
 
-    <quarkus.platform.version>1.9.2.Final</quarkus.platform.version>
-    <quarkus-plugin.version>1.9.2.Final</quarkus-plugin.version>
+    <quarkus.platform.version>1.10.2.Final</quarkus.platform.version>
+    <quarkus-plugin.version>1.10.2.Final</quarkus-plugin.version>
     <quarkus-http-servlet.version>3.0.16.Final</quarkus-http-servlet.version>
 
     <!--Tests-->
