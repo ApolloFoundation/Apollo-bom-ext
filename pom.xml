@@ -90,7 +90,7 @@
     <okhttp-eventsource.version>1.8.0</okhttp-eventsource.version>
     <okhttp.version>2.7.5</okhttp.version>
     <!-- TODO: cleanup -->
-    <jetty.version>9.4.24.v20191120</jetty.version>
+    <jetty.version>9.4.35.v20201120</jetty.version>
     <bitlet.version>0.1.4</bitlet.version>
     <weld.version>3.1.4.Final</weld.version>
     <weld-junit5.version>2.0.1.Final</weld-junit5.version>
