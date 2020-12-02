@@ -350,13 +350,11 @@
 
 
       <!-- Validation -->
-<!--
       <dependency>
         <groupId>javax.validation</groupId>
         <artifactId>validation-api</artifactId>
         <version>${bean-validation-api.version}</version>
       </dependency>
--->
 <!--
       <dependency>
         <groupId>org.hibernate.validator</groupId>
