@@ -515,11 +515,11 @@
         <artifactId>HikariCP</artifactId>
         <version>${hikari.version}</version>
       </dependency>
-      <dependency>
+<!--      <dependency>
         <groupId>com.beust</groupId>
         <artifactId>jcommander</artifactId>
         <version>${jcommander.version}</version>
-      </dependency>
+      </dependency>-->
       <dependency>
         <groupId>org.jdbi</groupId>
         <artifactId>jdbi3-core</artifactId>
@@ -605,6 +605,12 @@
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-tika</artifactId>
         <version>${quarkus.platform.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.jboss.slf4j</groupId>
+            <artifactId>slf4j-jboss-logmanager</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>io.quarkus.http</groupId>
