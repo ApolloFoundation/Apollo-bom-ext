@@ -586,6 +586,11 @@
         <artifactId>quarkus-jdbc-mariadb</artifactId>
         <version>${quarkus.platform.version}</version>
       </dependency>
+<!--      <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-agroal</artifactId>
+        <version>${quarkus.platform.version}</version>
+      </dependency>-->
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-jsonb</artifactId>
@@ -630,11 +635,6 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-jackson</artifactId>
-        <version>${quarkus.platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.quarkus</groupId>
-        <artifactId>quarkus-arc</artifactId>
         <version>${quarkus.platform.version}</version>
       </dependency>
       <dependency>
