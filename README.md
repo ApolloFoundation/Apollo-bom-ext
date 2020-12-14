@@ -1,8 +1,22 @@
-### External dependencies of Apollo components
+# External dependencies of Apollo components
 
 This is the BOM pacakage for all Apollo components. It contains all external libraries that are used by Apollo Java components. This package should be build and installed before all other packages.
 
+by Apollo blockchain node and can be accersed by browser at http://localhost:7876
+
+## Components that user Apollo-bom-ext
+
+1. [Apollo](https://github.com/ApolloFoundation/Apollo) Apollo blockchain node.
+2. [Apollo-dektop](https://github.com/ApolloFoundation/Apollo-desktop) Desktop wallet UI. Apollo-web-ui must be installed tobe able to run Apollo desktop wallet.
+3. [Apollo-tools](https://github.com/ApolloFoundation/Apollo-tools): "swiss knife" of tools for node maintenance, transaction signing, etc.
+
+
+## Java version
+
+Java 11 is required to build this module. For details, please read "Java version" section of [Apollo README](https://github.com/ApolloFoundation/Apollo)
+
 ## How to build it 
+
 `./mvnw clean install`
 
 
