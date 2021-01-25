@@ -5,7 +5,7 @@
 
   <groupId>com.apollocurrency</groupId>
   <artifactId>apl-bom-ext</artifactId>
-  <version>1.0.4</version>
+  <version>1.0.5</version>
   <packaging>pom</packaging>
   <name>apl-bom-ext</name>
 
@@ -85,10 +85,10 @@
 
     <!--Db-->
     <h2.version>1.4.199</h2.version>
-    <testcontainers.version>1.14.3</testcontainers.version>
+    <testcontainers.version>1.15.1</testcontainers.version>
     <mariadb-java-client.version>2.6.1</mariadb-java-client.version>
 
-    <flyway.version>7.0.4</flyway.version>
+    <flyway.version>7.5.0</flyway.version>
 
     <!--Logging-->
     <slf4j.version>1.7.30</slf4j.version>
