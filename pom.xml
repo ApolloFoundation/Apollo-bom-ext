@@ -166,7 +166,7 @@
       </dependency>
       <dependency>
         <groupId>io.firstbridge</groupId>
-        <artifactId>fb-process</artifactId>
+        <artifactId>fbprocess</artifactId>
         <version>${fbprocess.version}</version>
         <exclusions>
           <exclusion>
@@ -178,7 +178,7 @@
       <dependency>
         <groupId>io.firstbridge</groupId>
         <artifactId>fb-id</artifactId>
-        <version>${fbprocess.version}</version>
+        <version>${fbid.version}</version>
         <exclusions>
           <exclusion>
             <groupId>org.junit</groupId>
