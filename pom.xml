@@ -5,7 +5,7 @@
 
   <groupId>com.apollocurrency</groupId>
   <artifactId>apl-bom-ext</artifactId>
-  <version>1.0.5</version>
+  <version>1.0.6</version>
   <packaging>pom</packaging>
   <name>apl-bom-ext</name>
 
@@ -62,6 +62,8 @@
 
     <fbcrypto.version>2.0.1</fbcrypto.version>
     <bcprov.version>1.65</bcprov.version>
+    <fbprocess.version>1.0.3</fbprocess.version>
+    <fbid.version>1.0.1</fbid.version>
 
 
 
@@ -162,6 +164,28 @@
         <type>jar</type>
         <version>${bcprov.version}</version>
       </dependency>
+      <dependency>
+        <groupId>io.firstbridge</groupId>
+        <artifactId>fbprocess</artifactId>
+        <version>${fbprocess.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.junit</groupId>
+            <artifactId>junit-bom</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>      
+      <dependency>
+        <groupId>io.firstbridge</groupId>
+        <artifactId>fb-id</artifactId>
+        <version>${fbid.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.junit</groupId>
+            <artifactId>junit-bom</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>      
 
       <!--Logging-->
       <dependency>
