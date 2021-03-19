@@ -5,7 +5,7 @@
 
   <groupId>com.apollocurrency</groupId>
   <artifactId>apl-bom-ext</artifactId>
-  <version>1.0.6</version>
+  <version>1.1.6</version>
   <packaging>pom</packaging>
   <name>apl-bom-ext</name>
 
@@ -64,6 +64,7 @@
     <bcprov.version>1.65</bcprov.version>
     <fbprocess.version>1.0.4</fbprocess.version>
     <fbid.version>1.0.1</fbid.version>
+    <fb-kms-library.version>1.0.0</fb-kms-library.version>
 
 
 
@@ -183,6 +184,25 @@
           <exclusion>
             <groupId>org.junit</groupId>
             <artifactId>junit-bom</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>io.firstbridge</groupId>
+        <artifactId>kms-library</artifactId>
+        <version>${fb-kms-library.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.junit</groupId>
+            <artifactId>junit-bom</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
