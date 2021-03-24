@@ -60,8 +60,10 @@
 
     <!--Crypto-->
 
-    <fbcrypto.version>2.0.0</fbcrypto.version>
+    <fbcrypto.version>2.0.1</fbcrypto.version>
     <bcprov.version>1.65</bcprov.version>
+    <fbprocess.version>1.0.4</fbprocess.version>
+    <fbid.version>1.0.1</fbid.version>
 
 
 
@@ -85,8 +87,10 @@
 
     <!--Db-->
     <h2.version>1.4.199</h2.version>
-    <testcontainers.version>1.14.3</testcontainers.version>
+    <testcontainers.version>1.15.1</testcontainers.version>
     <mariadb-java-client.version>2.6.1</mariadb-java-client.version>
+
+    <flyway.version>7.5.0</flyway.version>
 
     <!--Logging-->
     <slf4j.version>1.7.30</slf4j.version>
@@ -108,8 +112,8 @@
     <rs-api.version>2.1.1</rs-api.version>
     <resteasy.version>4.5.3.Final</resteasy.version>
     <resteasy-tracing.version>1.0.0.Final</resteasy-tracing.version>
-    <swagger.version>2.1.2</swagger.version>
-    <junit5-bom.version>5.6.2</junit5-bom.version>
+    <swagger.version>2.1.6</swagger.version>
+    <junit5-bom.version>5.7.0</junit5-bom.version>
     <mockito.version>3.3.3</mockito.version>
     <hikari.version>3.4.1</hikari.version>
     <jcommander.version>1.72</jcommander.version>
@@ -175,6 +179,28 @@
         <artifactId>bcpkix-jdk15on</artifactId>
         <type>jar</type>
         <version>${bcprov.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.firstbridge</groupId>
+        <artifactId>fbprocess</artifactId>
+        <version>${fbprocess.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.junit</groupId>
+            <artifactId>junit-bom</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>io.firstbridge</groupId>
+        <artifactId>fb-id</artifactId>
+        <version>${fbid.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.junit</groupId>
+            <artifactId>junit-bom</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <!--Logging-->
@@ -430,6 +456,12 @@
         <groupId>org.mariadb.jdbc</groupId>
         <artifactId>mariadb-java-client</artifactId>
         <version>${mariadb-java-client.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.flywaydb</groupId>
+        <artifactId>flyway-core</artifactId>
+        <version>${flyway.version}</version>
       </dependency>
 
       <!-- Apache Tika libs-->
