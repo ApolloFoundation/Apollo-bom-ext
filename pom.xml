@@ -105,13 +105,15 @@
     <json-unit.version>1.20.0</json-unit.version>
     <okhttp-eventsource.version>1.8.0</okhttp-eventsource.version>
     <okhttp.version>2.7.5</okhttp.version>
+    <okhttp3.version>3.8.1</okhttp3.version>
+
     <!-- TODO: cleanup -->
     <jetty.version>9.4.24.v20191120</jetty.version>
     <bitlet.version>0.1.4</bitlet.version>
     <weld.version>3.1.4.Final</weld.version>
     <weld-junit5.version>2.0.1.Final</weld-junit5.version>
     <rs-api.version>2.1.1</rs-api.version>
-    <resteasy.version>4.5.3.Final</resteasy.version>
+    <resteasy.version>4.5.9.Final</resteasy.version>
     <resteasy-tracing.version>1.0.0.Final</resteasy-tracing.version>
     <swagger.version>2.1.6</swagger.version>
     <junit5-bom.version>5.7.1</junit5-bom.version>
@@ -337,6 +339,11 @@
       <dependency>
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-servlet-initializer</artifactId>
+        <version>${resteasy.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.resteasy</groupId>
+        <artifactId>resteasy-core</artifactId>
         <version>${resteasy.version}</version>
       </dependency>
       <dependency>
@@ -671,6 +678,12 @@
         <groupId>org.web3j</groupId>
         <artifactId>core</artifactId>
         <version>${org.web3j.core.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.squareup.okhttp3</groupId>
+        <artifactId>logging-interceptor</artifactId>
+        <version>${okhttp3.version}</version>
+        <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.ethereum</groupId>
