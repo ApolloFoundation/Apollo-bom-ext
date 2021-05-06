@@ -384,6 +384,11 @@
         <artifactId>httpcore-nio</artifactId>
         <version>${apache-httpcomponents.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.jboss.resteasy</groupId>
+        <artifactId>resteasy-client</artifactId>
+        <version>${resteasy.version}</version>
+      </dependency>
 
 
       <!--      Validation-->
