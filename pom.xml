@@ -218,10 +218,6 @@
         <version>${fb-kms-library.version}</version>
         <exclusions>
           <exclusion>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-grpc</artifactId>
-          </exclusion>
-          <exclusion>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-census</artifactId>
           </exclusion>
@@ -239,10 +235,6 @@
           </exclusion>
           <exclusion>
             <groupId>io.opencensus</groupId>
-            <artifactId>opencensus-api</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>io.opencensus</groupId>
             <artifactId>opencensus-impl</artifactId>
           </exclusion>
           <exclusion>
@@ -252,18 +244,6 @@
           <exclusion>
             <groupId>io.netty</groupId>
             <artifactId>netty-transport-native-kqueue</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>io.perfmark</groupId>
-            <artifactId>perfmark-api</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>io.perfmark</groupId>
-            <artifactId>perfmark-impl</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>io.perfmark</groupId>
-            <artifactId>perfmark-java9</artifactId>
           </exclusion>
           <exclusion>
             <groupId>io.quarkus</groupId>
@@ -428,6 +408,16 @@
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-core</artifactId>
         <version>${resteasy.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>io.smallrye.config</groupId>
+            <artifactId>smallrye-config</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>io.smallrye.config</groupId>
+            <artifactId>smallrye-config-common</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.jboss.resteasy</groupId>
