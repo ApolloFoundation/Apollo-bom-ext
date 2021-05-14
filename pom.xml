@@ -5,7 +5,7 @@
 
   <groupId>com.apollocurrency</groupId>
   <artifactId>apl-bom-ext</artifactId>
-  <version>1.0.6</version>
+  <version>1.0.7</version>
   <packaging>pom</packaging>
   <name>apl-bom-ext</name>
 
@@ -59,9 +59,8 @@
     <servlet-api.version>3.1.0</servlet-api.version>
 
     <!--Crypto-->
-
-    <fbcrypto.version>2.0.1</fbcrypto.version>
-    <bcprov.version>1.65</bcprov.version>
+    <fbcrypto.version>2.0.3</fbcrypto.version>
+    <bcprov.version>1.68</bcprov.version>
     <fbprocess.version>1.0.4</fbprocess.version>
     <fbid.version>1.0.1</fbid.version>
 
@@ -81,7 +80,7 @@
     <openjfx.version>12-ea+3</openjfx.version>
     <tika.version>1.22</tika.version>
     <upnp.version>0.1.4</upnp.version>
-    <jackson.version>2.10.3</jackson.version>
+    <jackson.version>2.11.2</jackson.version>
     <!--Indexing-->
     <lucene.version>7.5.0</lucene.version>
 
@@ -107,19 +106,19 @@
     <!-- TODO: cleanup -->
     <jetty.version>9.4.24.v20191120</jetty.version>
     <bitlet.version>0.1.4</bitlet.version>
-    <weld.version>3.1.4.Final</weld.version>
+    <weld.version>3.1.7.Final</weld.version>
     <weld-junit5.version>2.0.1.Final</weld-junit5.version>
     <rs-api.version>2.1.1</rs-api.version>
     <resteasy.version>4.5.3.Final</resteasy.version>
     <resteasy-tracing.version>1.0.0.Final</resteasy-tracing.version>
-    <swagger.version>2.1.6</swagger.version>
+    <swagger.version>2.1.7</swagger.version>
     <junit5-bom.version>5.7.0</junit5-bom.version>
     <mockito.version>3.3.3</mockito.version>
     <hikari.version>3.4.1</hikari.version>
     <jcommander.version>1.72</jcommander.version>
     <jdbi3-core.version>3.11.1</jdbi3-core.version>
     <jdbi3-sqlobject.version>3.11.1</jdbi3-sqlobject.version>
-    <lombok.version>1.18.12</lombok.version>
+    <lombok.version>1.18.18</lombok.version>
     <guava.version>28.1-jre</guava.version>
     <janino.version>3.1.0</janino.version>
     <hibernate-validator.version>6.1.0.Final</hibernate-validator.version>
@@ -153,6 +152,22 @@
           </exclusion>
         </exclusions>
       </dependency>
+      <dependency>
+        <groupId>io.firstbridge</groupId>
+        <artifactId>fb-identity</artifactId>
+        <version>1.0.1</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.junit</groupId>
+            <artifactId>junit-bom</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcprov-jdk15on</artifactId>
