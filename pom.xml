@@ -218,6 +218,14 @@
         <version>${fb-kms-library.version}</version>
         <exclusions>
           <exclusion>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-grpc</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-okhttp</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-census</artifactId>
           </exclusion>
