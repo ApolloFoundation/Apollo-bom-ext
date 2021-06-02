@@ -131,7 +131,7 @@
     <el-glassfish-impl.version>2.2.6</el-glassfish-impl.version>
     <paranamer.version>2.8</paranamer.version>
     <commons-fileupload.version>1.4</commons-fileupload.version>
-    <org.web3j.core.version>5.0.0</org.web3j.core.version>
+    <org.web3j.core.version>4.5.6</org.web3j.core.version>
     <ethereumj-core.version>1.7.2-RELEASE</ethereumj-core.version>
     <jboss-logging-main.version>3.4.1.Final</jboss-logging-main.version>
     <jboss-logging-optional.version>2.1.0.Final</jboss-logging-optional.version>
