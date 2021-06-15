@@ -444,26 +444,9 @@
         <artifactId>resteasy-multipart-provider</artifactId>
         <version>${resteasy.version}</version>
       </dependency>
-<!--
       <dependency>
         <groupId>org.jboss.resteasy</groupId>
-        <artifactId>resteasy-jaxrs</artifactId>
-        <version>3.11.2.Final</version>
-      </dependency>
-      <dependency> &lt;!&ndash; Needed by FAT JAR in run-time &ndash;&gt;
-        <groupId>org.jboss.resteasy</groupId>
-        <artifactId>resteasy-tracing-api</artifactId>
-        <version>${resteasy-tracing.version}</version>
-      </dependency>
-      <dependency> &lt;!&ndash; Needed by FAT JAR in run-time &ndash;&gt;
-        <groupId>org.apache.httpcomponents</groupId>
-        <artifactId>httpcore-nio</artifactId>
-        <version>${apache-httpcomponents.version}</version>
-      </dependency>
--->
-      <dependency>
-        <groupId>org.jboss.resteasy</groupId>
-        <artifactId>resteasy-client</artifactId>
+        <artifactId>resteasy-client-microprofile</artifactId>
         <version>${resteasy.version}</version>
       </dependency>
 
