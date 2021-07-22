@@ -5,7 +5,7 @@
 
   <groupId>com.apollocurrency</groupId>
   <artifactId>apl-bom-ext</artifactId>
-  <version>1.0.7</version>
+  <version>1.0.8</version>
   <packaging>pom</packaging>
   <name>apl-bom-ext</name>
 
@@ -116,6 +116,7 @@
     <mockito.version>3.3.3</mockito.version>
     <hikari.version>3.4.1</hikari.version>
     <jcommander.version>1.72</jcommander.version>
+    <picocli.version>4.6.1</picocli.version>
     <jdbi3-core.version>3.11.1</jdbi3-core.version>
     <jdbi3-sqlobject.version>3.11.1</jdbi3-sqlobject.version>
     <lombok.version>1.18.18</lombok.version>
@@ -537,6 +538,11 @@
         <groupId>com.beust</groupId>
         <artifactId>jcommander</artifactId>
         <version>${jcommander.version}</version>
+      </dependency>
+      <dependency>
+	<groupId>info.picocli</groupId>
+	<artifactId>picocli</artifactId>
+	<version>${picocli.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jdbi</groupId>
