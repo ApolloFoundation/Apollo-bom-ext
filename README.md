@@ -2,8 +2,6 @@
 
 This is the BOM pacakage for all Apollo components. It contains all external libraries that are used by Apollo Java components. This package should be build and installed before all other packages.
 
-by Apollo blockchain node and can be accersed by browser at http://localhost:7876
-
 ## Components that user Apollo-bom-ext
 
 1. [Apollo](https://github.com/ApolloFoundation/Apollo) Apollo blockchain node.
