@@ -1,6 +1,6 @@
 # External dependencies of Apollo components
 
-This is the BOM pacakage for all Apollo components. It contains all external libraries that are used by Apollo Java components. This package should be build and installed before all other packages.
+This is the BOM package for all Apollo components. It contains all external libraries that are used by Apollo Java components. This package should be build and installed before all other packages.
 
 ## Components that user Apollo-bom-ext
 
