@@ -84,7 +84,7 @@
     <lucene.version>7.5.0</lucene.version>
 
     <!--Db-->
-    <h2.version>1.4.199</h2.version>
+    <h2.version>2.1.210</h2.version>
     <testcontainers.version>1.14.3</testcontainers.version>
     <mariadb-java-client.version>2.6.1</mariadb-java-client.version>
 
