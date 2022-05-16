@@ -79,7 +79,7 @@
     <openjfx.version>12-ea+3</openjfx.version>
     <tika.version>1.22</tika.version>
     <upnp.version>0.1.4</upnp.version>
-    <jackson.version>2.10.3</jackson.version>
+    <jackson.version>2.12.6.1</jackson.version>
     <!--Indexing-->
     <lucene.version>7.5.0</lucene.version>
 
