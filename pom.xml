@@ -72,7 +72,7 @@
     <apache-commons-lang.version>3.9</apache-commons-lang.version>
     <apache-commons-io.version>1.4</apache-commons-io.version>
     <apache-commons-codec.version>1.9</apache-commons-codec.version>
-    <apache-commons-net.version>3.6</apache-commons-net.version>
+    <apache-commons-net.version>3.9.0</apache-commons-net.version>
     <apache-commons-math3.version>3.6.1</apache-commons-math3.version>
     <apache-httpcomponents.version>4.4.13</apache-httpcomponents.version>
 
