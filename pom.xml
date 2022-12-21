@@ -70,24 +70,24 @@
     <zxing.version>3.3.0</zxing.version>
 
     <!--Tools-->
-    <apache-commons-lang.version>3.9</apache-commons-lang.version>
-    <apache-commons-io.version>1.4</apache-commons-io.version>
-    <apache-commons-codec.version>1.9</apache-commons-codec.version>
-    <apache-commons-net.version>3.6</apache-commons-net.version>
+    <apache-commons-lang.version>3.12.0</apache-commons-lang.version>
+    <apache-commons-io.version>2.11.0</apache-commons-io.version>
+    <apache-commons-codec.version>1.15</apache-commons-codec.version>
+    <apache-commons-net.version>3.9.0</apache-commons-net.version>
     <apache-commons-math3.version>3.6.1</apache-commons-math3.version>
-    <apache-httpcomponents.version>4.4.13</apache-httpcomponents.version>
+    <apache-httpcomponents.version>4.4.16</apache-httpcomponents.version>
 
-    <openjfx.version>12-ea+3</openjfx.version>
-    <tika.version>1.22</tika.version>
-    <upnp.version>0.1.4</upnp.version>
+<!--    <openjfx.version>12-ea+3</openjfx.version>-->
+    <tika.version>2.6.0</tika.version>
+<!--    <upnp.version>0.1.4</upnp.version>-->
     <jackson.version>2.14.1</jackson.version>
     <!--Indexing-->
     <lucene.version>7.5.0</lucene.version>
 
     <!--Db-->
     <h2.version>1.4.199</h2.version>
-    <testcontainers.version>1.15.1</testcontainers.version>
-    <mariadb-java-client.version>2.6.1</mariadb-java-client.version>
+    <testcontainers.version>1.17.6</testcontainers.version>
+    <mariadb-java-client.version>2.6.1</mariadb-java-client.version> <!-- 3.1.0 -->
 
     <flyway.version>9.10.1</flyway.version>
 
@@ -104,10 +104,10 @@
     <okhttp-eventsource.version>1.8.0</okhttp-eventsource.version>
     <okhttp.version>2.7.5</okhttp.version>
     <!-- TODO: cleanup -->
-    <jetty.version>9.4.24.v20191120</jetty.version>
+    <jetty.version>9.4.50.v20221201</jetty.version> <!-- 11.0.13 -->
     <bitlet.version>0.1.4</bitlet.version>
-    <weld.version>3.1.7.Final</weld.version>
-    <weld-junit5.version>2.0.1.Final</weld-junit5.version>
+    <weld.version>5.1.0.Final</weld.version>
+    <weld-junit5.version>4.0.0.Final</weld-junit5.version>
     <rs-api.version>2.1.1</rs-api.version>
     <resteasy.version>4.5.3.Final</resteasy.version>
     <resteasy-tracing.version>1.0.0.Final</resteasy-tracing.version>
@@ -119,7 +119,7 @@
     <jdbi3-core.version>3.11.1</jdbi3-core.version>
     <jdbi3-sqlobject.version>3.11.1</jdbi3-sqlobject.version>
     <lombok.version>1.18.24</lombok.version>
-    <guava.version>28.1-jre</guava.version>
+    <guava.version>31.1-jre</guava.version>
     <janino.version>3.1.0</janino.version>
     <hibernate-validator.version>6.1.0.Final</hibernate-validator.version>
     <bean-validation-api.version>2.0.0.Final</bean-validation-api.version>
@@ -355,13 +355,6 @@
         <artifactId>resteasy-multipart-provider</artifactId>
         <version>${resteasy.version}</version>
       </dependency>
-      <!--
-            <dependency>
-              <groupId>org.jboss.resteasy</groupId>
-              <artifactId>resteasy-jaxrs</artifactId>
-              <version>3.11.2.Final</version>
-            </dependency>
-      -->
       <dependency> <!-- Needed by FAT JAR in run-time -->
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-tracing-api</artifactId>
@@ -483,6 +476,11 @@
         <groupId>com.google.zxing</groupId>
         <artifactId>javase</artifactId>
         <version>${zxing.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.inject</groupId>
+        <artifactId>javax.inject</artifactId>
+        <version>1</version>
       </dependency>
       <dependency>
         <groupId>org.jboss.weld.se</groupId>
