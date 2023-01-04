@@ -56,7 +56,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
     <!--Web-->
-    <servlet-api.version>3.1.0</servlet-api.version>
+    <servlet-api.version>6.0.0</servlet-api.version> <!-- 3.1.0 -->
 
     <!--Crypto-->
     <fbcrypto.version>2.0.3</fbcrypto.version>
@@ -104,27 +104,28 @@
     <okhttp-eventsource.version>1.8.0</okhttp-eventsource.version>
     <okhttp.version>2.7.5</okhttp.version>
     <!-- TODO: cleanup -->
-    <jetty.version>9.4.50.v20221201</jetty.version> <!-- 11.0.13 -->
+    <jetty.version>11.0.13</jetty.version>
+    <jetty-websocket.version>9.4.50.v20221201</jetty-websocket.version>
     <bitlet.version>0.1.4</bitlet.version>
     <weld.version>5.1.0.Final</weld.version>
     <weld-junit5.version>4.0.0.Final</weld-junit5.version>
-    <rs-api.version>2.1.1</rs-api.version>
-    <resteasy.version>4.5.3.Final</resteasy.version>
-    <resteasy-tracing.version>1.0.0.Final</resteasy-tracing.version>
+    <rs-api.version>3.1.0</rs-api.version>
+    <resteasy.version>6.2.2.Final</resteasy.version>
+    <resteasy-tracing.version>2.0.0.Final</resteasy-tracing.version>
     <swagger.version>2.2.7</swagger.version>
     <junit5-bom.version>5.9.1</junit5-bom.version>
     <mockito.version>4.10.0</mockito.version>
     <hikari.version>3.4.1</hikari.version>
     <jcommander.version>1.72</jcommander.version>
-    <jdbi3-core.version>3.11.1</jdbi3-core.version>
-    <jdbi3-sqlobject.version>3.11.1</jdbi3-sqlobject.version>
+    <jdbi3-core.version>3.36.0</jdbi3-core.version>
+    <jdbi3-sqlobject.version>3.36.0</jdbi3-sqlobject.version>
     <lombok.version>1.18.24</lombok.version>
     <guava.version>31.1-jre</guava.version>
     <janino.version>3.1.0</janino.version>
-    <hibernate-validator.version>6.1.0.Final</hibernate-validator.version>
-    <bean-validation-api.version>2.0.0.Final</bean-validation-api.version>
-    <el-api.version>3.0.0</el-api.version>
-    <el-glassfish-impl.version>2.2.6</el-glassfish-impl.version>
+    <hibernate-validator.version>8.0.0.Final</hibernate-validator.version>
+    <bean-validation-api.version>3.0.2</bean-validation-api.version>
+    <el-api.version>5.0.1</el-api.version>
+    <el-glassfish-impl.version>5.0.0-M1</el-glassfish-impl.version>
     <paranamer.version>2.8</paranamer.version>
     <commons-fileupload.version>1.4</commons-fileupload.version>
     <org.web3j.core.version>4.5.6</org.web3j.core.version>
@@ -241,6 +242,12 @@
         <groupId>com.fasterxml.jackson.datatype</groupId>
         <artifactId>jackson-datatype-json-org</artifactId>
         <version>${jackson.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
@@ -281,8 +288,8 @@
       </dependency>
 
       <dependency>
-        <groupId>javax.servlet</groupId>
-        <artifactId>javax.servlet-api</artifactId>
+        <groupId>jakarta.servlet</groupId>
+        <artifactId>jakarta.servlet-api</artifactId>
         <version>${servlet-api.version}</version>
       </dependency>
       <dependency>
@@ -303,18 +310,18 @@
       <dependency>
         <groupId>org.eclipse.jetty.websocket</groupId>
         <artifactId>websocket-api</artifactId>
-        <version>${jetty.version}</version>
+        <version>${jetty-websocket.version}</version>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty.websocket</groupId>
         <artifactId>websocket-client</artifactId>
-        <version>${jetty.version}</version>
+        <version>${jetty-websocket.version}</version>
         <classifier>hybrid</classifier>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty.websocket</groupId>
         <artifactId>websocket-server</artifactId>
-        <version>${jetty.version}</version>
+        <version>${jetty-websocket.version}</version>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
@@ -324,8 +331,8 @@
 
       <!-- REST:  Need to put api here because strange things happens without it  -->
       <dependency>
-        <groupId>javax.ws.rs</groupId>
-        <artifactId>javax.ws.rs-api</artifactId>
+        <groupId>jakarta.ws.rs</groupId>
+        <artifactId>jakarta.ws.rs-api</artifactId>
         <version>${rs-api.version}</version>
       </dependency>
       <!-- RESTEasy runtime dependencies -->
@@ -369,9 +376,14 @@
 
       <!--      Validation-->
       <dependency>
-        <groupId>javax.validation</groupId>
-        <artifactId>validation-api</artifactId>
+        <groupId>jakarta.validation</groupId>
+        <artifactId>jakarta.validation-api</artifactId>
         <version>${bean-validation-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate.validator</groupId>
+        <artifactId>hibernate-validator</artifactId>
+        <version>${hibernate-validator.version}</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate.validator</groupId>
@@ -384,13 +396,13 @@
         <version>${paranamer.version}</version>
       </dependency>
       <dependency>
-        <groupId>javax.el</groupId>
-        <artifactId>javax.el-api</artifactId>
+        <groupId>jakarta.el</groupId>
+        <artifactId>jakarta.el-api</artifactId>
         <version>${el-api.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.glassfish.web</groupId>
-        <artifactId>javax.el</artifactId>
+        <groupId>org.glassfish</groupId>
+        <artifactId>jakarta.el</artifactId>
         <version>${el-glassfish-impl.version}</version>
       </dependency>
 
@@ -427,6 +439,23 @@
         <groupId>io.swagger.core.v3</groupId>
         <artifactId>swagger-jaxrs2</artifactId>
         <version>${swagger.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>io.swagger.core.v3</groupId>
+        <artifactId>swagger-jaxrs2-jakarta</artifactId>
+        <version>${swagger.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>io.swagger.core.v3</groupId>
@@ -435,8 +464,18 @@
       </dependency>
       <dependency>
         <groupId>io.swagger.core.v3</groupId>
+        <artifactId>swagger-annotations-jakarta</artifactId>
+        <version>${swagger.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.swagger.core.v3</groupId>
         <artifactId>swagger-models</artifactId>
         <version>${swagger.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.swagger.core.v3</groupId>
+        <artifactId>swagger-models-jakarta</artifactId>
+        <version>2.2.7</version>
       </dependency>
       <dependency>
         <groupId>com.h2database</groupId>
@@ -453,6 +492,11 @@
       <dependency>
         <groupId>org.flywaydb</groupId>
         <artifactId>flyway-core</artifactId>
+        <version>${flyway.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.flywaydb</groupId>
+        <artifactId>flyway-mysql</artifactId>
         <version>${flyway.version}</version>
       </dependency>
 
