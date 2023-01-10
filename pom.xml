@@ -99,13 +99,15 @@
 
     <!--Tests-->
     <json-simple.version>1.1.1</json-simple.version>
+    <org-json.version>20220924</org-json.version>
     <jsonassert.version>1.5.0</jsonassert.version>
     <json-unit.version>1.20.0</json-unit.version>
     <okhttp-eventsource.version>1.8.0</okhttp-eventsource.version>
     <okhttp.version>2.7.5</okhttp.version>
     <!-- TODO: cleanup -->
     <jetty.version>11.0.13</jetty.version>
-    <jetty-websocket.version>9.4.50.v20221201</jetty-websocket.version>
+    <jakarta-websocket.version>2.1.0</jakarta-websocket.version>
+    <jetty-websocket.version>11.0.13</jetty-websocket.version>
     <bitlet.version>0.1.4</bitlet.version>
     <weld.version>5.1.0.Final</weld.version>
     <weld-junit5.version>4.0.0.Final</weld-junit5.version>
@@ -237,6 +239,11 @@
           </exclusion>
         </exclusions>
       </dependency>
+      <dependency>
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>${org-json.version}</version>
+      </dependency>
       <!-- json-simple should be gone after new REST completion -->
       <dependency>
         <groupId>com.fasterxml.jackson.datatype</groupId>
@@ -309,18 +316,43 @@
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty.websocket</groupId>
-        <artifactId>websocket-api</artifactId>
+        <artifactId>websocket-servlet</artifactId>
+        <version>${jetty.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty.websocket</groupId>
+        <artifactId>websocket-jetty-server</artifactId>
+        <version>${jetty.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>jakarta.websocket</groupId>
+        <artifactId>jakarta.websocket-api</artifactId>
+        <version>${jakarta-websocket.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty.websocket</groupId>
+        <artifactId>websocket-core-server</artifactId>
+        <version>${jetty.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty.websocket</groupId>
+        <artifactId>websocket-jakarta-client</artifactId>
+        <version>${jetty-websocket.version}</version>
+<!--        <classifier>hybrid</classifier>-->
+      </dependency>
+      <dependency>
+        <groupId>jakarta.websocket</groupId>
+        <artifactId>jakarta.websocket-client-api</artifactId>
+        <version>${jakarta-websocket.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty.websocket</groupId>
+        <artifactId>websocket-jetty-client</artifactId>
         <version>${jetty-websocket.version}</version>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty.websocket</groupId>
-        <artifactId>websocket-client</artifactId>
-        <version>${jetty-websocket.version}</version>
-        <classifier>hybrid</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.eclipse.jetty.websocket</groupId>
-        <artifactId>websocket-server</artifactId>
+        <artifactId>websocket-jakarta-server</artifactId>
         <version>${jetty-websocket.version}</version>
       </dependency>
       <dependency>
