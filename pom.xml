@@ -67,7 +67,7 @@
 
 
     <!--QR-code-->
-    <zxing.version>3.3.0</zxing.version>
+    <zxing.version>3.5.1</zxing.version>
 
     <!--Tools-->
     <apache-commons-lang.version>3.12.0</apache-commons-lang.version>
