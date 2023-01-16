@@ -87,7 +87,7 @@
     <!--Db-->
     <h2.version>1.4.199</h2.version>
     <testcontainers.version>1.17.6</testcontainers.version>
-    <mariadb-java-client.version>2.6.1</mariadb-java-client.version> <!-- 3.1.0 -->
+    <mariadb-java-client.version>2.7.7</mariadb-java-client.version>
 
     <flyway.version>9.10.1</flyway.version>
 
