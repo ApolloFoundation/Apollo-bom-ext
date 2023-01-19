@@ -11,7 +11,7 @@ This is the BOM pacakage for all Apollo components. It contains all external lib
 
 ## Java version
 
-Java 11 is required to build this module. For details, please read "Java version" section of [Apollo README](https://github.com/ApolloFoundation/Apollo)
+Java 17 is required to build this module. For details, please read "Java version" section of [Apollo README](https://github.com/ApolloFoundation/Apollo)
 
 ## How to build it 
 
