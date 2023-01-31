@@ -89,7 +89,7 @@
     <testcontainers.version>1.17.6</testcontainers.version>
     <mariadb-java-client.version>2.7.7</mariadb-java-client.version>
 
-    <flyway.version>9.10.1</flyway.version>
+    <flyway.version>8.5.13</flyway.version>
 
     <!--Logging-->
     <slf4j.version>2.0.6</slf4j.version>
@@ -488,11 +488,6 @@
       <dependency>
         <groupId>org.flywaydb</groupId>
         <artifactId>flyway-core</artifactId>
-        <version>${flyway.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.flywaydb</groupId>
-        <artifactId>flyway-mysql</artifactId>
         <version>${flyway.version}</version>
       </dependency>
 
