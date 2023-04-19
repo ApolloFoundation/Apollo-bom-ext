@@ -134,7 +134,7 @@
     <ethereumj-core.version>1.7.2-RELEASE</ethereumj-core.version>
     <jboss-logging-main.version>3.4.1.Final</jboss-logging-main.version>
     <jboss-logging-optional.version>2.1.0.Final</jboss-logging-optional.version>
-    <jta.version>1.1</jta.version>
+    <jta.version>2.0.1</jta.version>
     <two-factor.version>1.0</two-factor.version>
   </properties>
 
@@ -418,8 +418,8 @@
         <version>${jboss-logging-optional.version}</version>
       </dependency>
       <dependency>
-        <groupId>javax.transaction</groupId>
-        <artifactId>jta</artifactId>
+        <groupId>jakarta.transaction</groupId>
+        <artifactId>jakarta.transaction-api</artifactId>
         <version>${jta.version}</version>
       </dependency>
 
@@ -488,6 +488,11 @@
       <dependency>
         <groupId>org.flywaydb</groupId>
         <artifactId>flyway-core</artifactId>
+        <version>${flyway.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.flywaydb</groupId>
+        <artifactId>flyway-mysql</artifactId>
         <version>${flyway.version}</version>
       </dependency>
 
