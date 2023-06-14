@@ -118,7 +118,7 @@
     <jdbi3-core.version>3.11.1</jdbi3-core.version>
     <jdbi3-sqlobject.version>3.11.1</jdbi3-sqlobject.version>
     <lombok.version>1.18.12</lombok.version>
-    <guava.version>28.1-jre</guava.version>
+    <guava.version>32.0.0-jre</guava.version>
     <janino.version>3.1.0</janino.version>
     <hibernate-validator.version>6.1.0.Final</hibernate-validator.version>
     <bean-validation-api.version>2.0.0.Final</bean-validation-api.version>
